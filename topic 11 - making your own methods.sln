@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "topic 11 - making your own methods", "topic 11 - making your own methods.csproj", "{691F10CD-51F3-4369-A945-3EF08239D6CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{691F10CD-51F3-4369-A945-3EF08239D6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691F10CD-51F3-4369-A945-3EF08239D6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691F10CD-51F3-4369-A945-3EF08239D6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691F10CD-51F3-4369-A945-3EF08239D6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D67F3DF5-5313-4A6B-BDDF-A416651BE6B3}
+	EndGlobalSection
+EndGlobal
