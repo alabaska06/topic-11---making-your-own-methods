@@ -143,5 +143,42 @@ namespace topic_11___making_your_own_methods
             }
             return rise / run;
         }
+
+        /// <summary>
+        /// Takes 3 side lenghths of a triangle, and determines weather it is a right triangle.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
+        public static bool IsRight(double a, double b, double c)
+        {
+            double[] sides = { a, b, c };
+            Array.Sort(sides);
+            return Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
+        }
+
+        /// <summary>
+        /// Takes in a minimum, maximum, and size as parameters, and returns a list of 'size' intergers filled with random numbers between 'min' and 'max'.
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="size"></param>
+        /// <returns></returns>
+        public static List<int> GetRandomList(int min, int max, int size)
+        {
+            Random generator = new Random();
+            List<int> randomList = new List<int>();
+
+            for (int i = 0; i < size; i++)
+            {
+                randomList.Add(generator.Next(min, max + 1));
+            }
+
+            return randomList;
+        }
+
+
+
     }
 }

@@ -53,8 +53,26 @@ namespace topic_11___making_your_own_methods
             Console.WriteLine("GetSlope Method (point objects):");
             //Im using the same set variable for Point p1 and p2 as the GetRise Method
             double slope2 = MyMethods.GetSlope(p1, p2);
-            Console.WriteLine($"Slope between p1 and p2: {slope2}");
+            Console.WriteLine($"Slope between p1 and p2: {slope2}\n");
 
+            Console.WriteLine("IsRight Method:");
+            if (MyMethods.IsRight(3, 4, 5))
+            {
+                Console.WriteLine("The triangle is a right triangle.");
+            }
+            else
+            {
+                Console.WriteLine("The triangle is not a right triangle.");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("GetRandomList Method:");
+            List<int> randomNumbers = MyMethods.GetRandomList(1, 100, 10);
+            Console.WriteLine("Random Numbers:");
+            foreach (int number in randomNumbers)
+            {
+                Console.WriteLine(number);
+            }
 
         }
     }
