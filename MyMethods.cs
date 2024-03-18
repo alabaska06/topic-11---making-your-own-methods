@@ -178,6 +178,76 @@ namespace topic_11___making_your_own_methods
             return randomList;
         }
 
+        /// <summary>
+        /// Takes in a minimum, maximum and size as parameters, and returns an array of 'size' intergers filled with random numbers between 'min' and 'max'.
+        /// <summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="size"></param>
+        /// <returns></returns>
+        public static int[] GetRandomArray(int min, int max, int size)
+        {
+            int[] randomArrayList = new int[min, max];
+
+            for (int i = 0; i<size; i++)
+            {
+                randomArrayList[i] = generator.Next(1, 101);
+            }
+            return randomArrayList;
+        }
+
+        /// <summary>
+        /// This method takes in a string and returns the reversed version.
+        /// <summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
+        public static string Reverse(string word)
+        {
+            string backwards = "";
+            for (int i = word.Length - 1; i >=; i++)
+            {
+                backwards = backwards + word.Substring(i, 1);
+            }
+
+            backwards = "";
+
+            for int i = 0; i < word.Length; i++)
+            {
+                backwards = word.Substring(i, 1) + backwards;
+            }
+
+            return backwards;
+        }
+
+        /// <summary>
+        /// Takes in a minimum, maximum and size as parameters, and returns the average from the 'size' numbers randomly generated from between the 'min' and 'max'.
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="size"></param>
+        /// <param name="average"></param>
+        /// <returns></returns>
+        public static List<double> Average(double min, double max, double size, double average)
+        {
+            List<double> numbers = new List<double>();
+
+            for (int i = 0; i < size; i++)
+            {
+                numbers.Add(generator.Next(min, max + 1));
+            }
+
+            var total = 0;
+
+            foreach (double number in numbers)
+            {
+                total += number;
+            }
+
+            average = total / numbers.Length();
+
+            return average;
+
+        }
+
 
 
     }

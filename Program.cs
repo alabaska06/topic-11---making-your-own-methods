@@ -74,6 +74,29 @@ namespace topic_11___making_your_own_methods
                 Console.WriteLine(number);
             }
 
+            Console.WriteLine();
+            Console.WriteLine("GetRandomArray Method:");
+            int arrayList = MyMethods.GetRandomArray(1, 100, 10)
+            foreach (int number in arrayList)
+            {
+                Console.WriteLine(number);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Reverse Method:");
+            string backwards = MyMethods.Reverse(word)
+            foreach (string words in word)
+            {
+                Console.WriteLine(words);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Average Method:");
+            List<double> numbers = MyMethods.Average(1, 100, 10)
+           Console.WriteLine(MyMethods.average);
+            
+
+
         }
     }
 }
